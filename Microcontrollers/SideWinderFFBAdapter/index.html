@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Side Winder FFB Adapter - Clarkez Wiki</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Clarkez Wiki</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Arcade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">ControlPanel</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Arcade/ControlPanel/" class="dropdown-item">Control Panel</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">MameBuild</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Arcade/MameBuild/" class="dropdown-item">Mame Bartop Build</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Virtua Racing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/0.%20Intro/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/1.%20Research/" class="dropdown-item">Research</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/2.%20Initial%20Startup/" class="dropdown-item">Initial Startup & Failure</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/3.%20Building%20a%20USB%20Adapter%20for%20Hardware/" class="dropdown-item">Daytona USB Hardare</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/4.%20Setting%20up%20a%20PC/" class="dropdown-item">Driving Software</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/5.%20virtuaracing/" class="dropdown-item">Hardware</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/99.%20Links/" class="dropdown-item">Links</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Microcontrollers <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">MSX HX 10 Keyboard</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../MSX%20HX-10%20Keyboard/" class="dropdown-item">MSX HX-10 USB Keyboard</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">SideWinderFFBAdapter</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Side Winder FFB Adapter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../MSX%20HX-10%20Keyboard/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#side-winder-ffb-adapter" class="nav-link">Side Winder FFB Adapter</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#circuit-diagram" class="nav-link">Circuit Diagram</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#build" class="nav-link">Build</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#future" class="nav-link">Future</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#links" class="nav-link">Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="side-winder-ffb-adapter">Side Winder FFB Adapter</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Adapt-FFB-Joy is an AVR microcontroller based device that looks like a joystick with advanced force feedback features in a Windows machine without need for installing any device drivers to PC.</p>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<p><a href="images/adaptffbjoy-circuit.png" title="XX"><img alt="" src="images/adaptffbjoy-circuit.png" title="XX" /></a> </p>
+<h2 id="build">Build</h2>
+<p>May 2019</p>
+<p>I got a hold of the capacitors required and the DB15 Breakout</p>
+<p><a href="https://amzn.eu/d/2lSi5U0">example breakout Board @ Amazon</a> </p>
+<p><a href="images/DB15BreakoutAdapter.jpg" title="XX"><img alt="" src="images/DB15BreakoutAdapter.jpg" title="XX" /></a></p>
+<p>I then build this in a breadboard setup and connected it back to the Joystick.</p>
+<p><a href="images/sidewinderFFBSetup.jpg" title="XX"><img alt="" src="images/sidewinderFFBSetup.jpg" title="XX" /></a> 
+<a href="images/sidewinderFFBBoard.jpg" title="XX"><img alt="" src="images/sidewinderFFBBoard.jpg" title="XX" /></a></p>
+<p>Results not as expected, I didn't get he FFB (no matter which tool I tried) &amp;  I also got some twitching on the readouts as you can see from the gif below.</p>
+<p><a href="images/sidewinderFFBTwitch.gif" title="XX"><img alt="" src="images/sidewinderFFBTwitch.gif" title="XX" /></a> </p>
+<h2 id="future">Future</h2>
+<p>It may be length or quality of cables, so the plan is to build this back up again on a breadboard and try again.</p>
+<p><a href="images/DB15Breakout2.png" title="XX"><img alt="" src="images/DB15Breakout2.png" title="XX" /></a></p>
+<h2 id="links">Links</h2>
+<ul>
+<li>
+<p><a href="https://github.com/tloimu/adapt-ffb-joy">GitHub - tloimu/adapt-ffb-joy: adapt-ffb-joy</a>   </p>
+</li>
+<li>
+<p><a href="https://arstechnica.com/civis/viewtopic.php?f=53&amp;t=1307787">Reviving an old gameport joystick - Ars Technica OpenForum</a>                                                              </p>
+</li>
+<li>
+<p><a href="https://code.google.com/archive/p/adapt-ffb-joy/">Google Code Archive - adapt-ffb-joy</a>   </p>
+</li>
+<li><a href="https://code.google.com/archive/p/sidewinder-arduino/">Google Code Archive - sidewinder-arduino</a> </li>
+<li>
+<p><a href="https://code.google.com/archive/p/sw3dprousb">Google Code Archive - sw3dprousb</a>  </p>
+</li>
+<li>
+<p><a href="https://en.m.wikipedia.org/wiki/Microsoft_SideWinder">Microsoft SideWinder - Wikipedia</a>  </p>
+</li>
+<li>
+<p><a href="https://en.m.wikipedia.org/wiki/Microsoft_SideWinder#Force_Feedback_Pro">Microsoft SideWinder - Wikipedia</a>   </p>
+</li>
+<li>
+<p><a href="https://descentbb.net/viewtopic.php?f=8&amp;t=19061&amp;sid=29e01b6d793a0064676c2eac7d3a78b3">Reverse Engineering the Force Feedback Pro - DescentBB</a>    </p>
+</li>
+<li><a href="https://www.descentbb.net/viewtopic.php?f=8&amp;t=19061#p295208">Reverse Engineering the Force Feedback Pro - DescentBB</a> </li>
+<li>
+<p><a href="https://www.descentbb.net/viewtopic.php?t=15526">USB Converter for MS Sidewinder 3DPro, PP, and FFP - DescentBB</a> </p>
+</li>
+<li>
+<p><a href="http://blog.wolfman.com/articles/2009/10/24/converting-a-sidewinder-3d-pro-joystick-to-usb">Wolfmans Howlings</a>   </p>
+</li>
+<li>
+<p><a href="http://www.iowajohnsons.com/FFBVert/FFBVert.html">FFB-Vert</a>  </p>
+</li>
+<li>
+<p><a href="https://riseofflight.com/forum/topic/45292-ms-sidewinder-ffb-pro-working-usb-adapter/">MS Sidewinder FFB Pro working with USB adapter! - Hardware and Controllers - Rise of Flight Forum</a>    </p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=IvXyDwlAN8k">Computer vision inside a Microsoft force feedback pro, the madness - YouTube</a>   </p>
+</li>
+<li><a href="https://www.youtube.com/watch?v=wVMvXAtynp0">What&#39;s Inside the Microsoft Sidewinder Force Feedback Pro Joystick - YouTube</a>   </li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Or2Szf32lL4">Converting Sidewinder Precision Flightstick Pro To USB - YouTube</a>   </p>
+</li>
+<li>
+<p><a href="https://easyeda.com/feather/FFB_FFP_USB_adapter-iHBvN5nhz">FFB-FFP-USB-adapter - EasyEDA</a>    </p>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>MSX HX-10 USB Keyboard - Clarkez Wiki</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">Clarkez Wiki</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Arcade <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">ControlPanel</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Arcade/ControlPanel/" class="dropdown-item">Control Panel</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">MameBuild</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Arcade/MameBuild/" class="dropdown-item">Mame Bartop Build</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Virtua Racing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/0.%20Intro/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/1.%20Research/" class="dropdown-item">Research</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/2.%20Initial%20Startup/" class="dropdown-item">Initial Startup & Failure</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/3.%20Building%20a%20USB%20Adapter%20for%20Hardware/" class="dropdown-item">Daytona USB Hardare</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/4.%20Setting%20up%20a%20PC/" class="dropdown-item">Driving Software</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/5.%20virtuaracing/" class="dropdown-item">Hardware</a>
+</li>
+            
+<li>
+    <a href="../../Arcade/Virtua-Racing/99.%20Links/" class="dropdown-item">Links</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Microcontrollers <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">MSX HX 10 Keyboard</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">MSX HX-10 USB Keyboard</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">SideWinderFFBAdapter</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../SideWinderFFBAdapter/" class="dropdown-item">Side Winder FFB Adapter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../Arcade/Virtua-Racing/99.%20Links/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../SideWinderFFBAdapter/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#msx-hx-10-usb-keyboard" class="nav-link">MSX HX-10 USB Keyboard</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#intro" class="nav-link">Intro</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#firmware" class="nav-link">Firmware</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hardware" class="nav-link">Hardware</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#firmware-customisation" class="nav-link">Firmware Customisation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#leds" class="nav-link">LEDs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#toshiba-msx-hx-10" class="nav-link">Toshiba MSX HX-10</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="msx-hx-10-usb-keyboard">MSX HX-10 USB Keyboard</h1>
+<h2 id="intro">Intro</h2>
+<p>My First Computer was an MSX HX-10.
+At one point it stopped working because the joystick was continueing registering as being directed up.
+It's on my project list to try and repair the board but in the meantime I thought it was a good idea to setup the keyboard as a USB device (and at least get to use it).</p>
+<p><a href="images/20171013_141442.jpg" title="XX"><img alt="" src="images/20171013_141442.jpg" title="XX" /></a></p>
+<h2 id="firmware">Firmware</h2>
+<p>https://github.com/tmk/tmk_keyboard
+https://github.com/peteclarkez/tmk_keyboard/tree/master/keyboard/msx_hx10</p>
+<p>Upon looking at he options for making this work i found the tmk firmware. It was relatively easy to rebuild this to include the new keyboard details</p>
+<p>The following links contained some good tutorials to get started.</p>
+<ul>
+<li><a href="https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html">TMK Tutorial 1</a></li>
+<li><a href="https://deskthority.net/workshop-f7/how-to-build-your-very-own-keyboard-firmware-t7177.html#p141386">TMK Tutorial 2</a></li>
+</ul>
+<h2 id="hardware">Hardware</h2>
+<p>The adapter that used to connect the keboard to the board is a 2mm pitch so it's relatively easy to use an adapter to integrate this with a normal teensey board</p>
+<ul>
+<li><a href="http://www.proto-advantage.com/store/product_info.php?products_id=3800084">2mm to 2.54mm Pitch Adapter</a> </li>
+<li><a href="https://www.pjrc.com/store/teensypp.html">Teensey 2++</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="images/ProtoAdvantage.jpg" title="XX"><img alt="" src="images/ProtoAdvantage.jpg" title="XX" /></a></td>
+<td align="center">Adapter Hardware</td>
+</tr>
+<tr>
+<td align="center"><a href="images/20171021_115901.jpg" title="XX"><img alt="" src="images/20171021_115901.jpg" title="XX" /></a></td>
+<td align="center">Teensey &amp; Adapter Hardware</td>
+</tr>
+<tr>
+<td align="center"><a href="images/20171013_141401.jpg" title="XX"><img alt="" src="images/20171013_141401.jpg" title="XX" /></a></td>
+<td align="center">Adapters connected to the keybaord matrix</td>
+</tr>
+</tbody>
+</table>
+<h2 id="firmware-customisation">Firmware Customisation</h2>
+<p>First thing was to use </p>
+<p><a href="images/keyboardMatrix.jpg" title="XX"><img alt="" src="images/keyboardMatrix.jpg" title="XX" /></a> </p>
+<ul>
+<li>MSX Generic KeyMap http://map.grauw.nl/articles/keymatrix.php</li>
+<li>
+<p>MSX Info Incl Txt Keymap http://problemkaputt.de/portar.htm#peripheralinterface</p>
+</li>
+<li>
+<p>MSX HX-10 Firmware https://github.com/peteclarkez/tmk_keyboard/tree/master/keyboard/msx_hx10</p>
+</li>
+</ul>
+<h2 id="leds">LEDs</h2>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="images/KeyBoardTrace.jpg" title="XX"><img alt="" src="images/KeyBoardTrace.jpg" title="XX" /></a></td>
+<td align="center">I highlighted the trace on the image in order to ensure i got the right pins for the leds</td>
+</tr>
+<tr>
+<td align="center"><a href="images/20180502_210624.jpg" title="XX"><img alt="" src="images/20180502_210624.jpg" title="XX" /></a></td>
+<td align="center">Here we have a link attached to the pins overhanging the end of the chip in order to flash the led for power permanently and the caps lock when needed</td>
+</tr>
+<tr>
+<td align="center">## Keyboard Fix</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>When I got everything running There were a number of the keys which didn't work properly so I ordered an applied some keyboard fix to the electrical contacts.</p>
+<p>http://www.nightfallcrew.com/16/12/2015/toshiba-hx-10-64k-msx-keyboard-pad-fix/</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="images/keyboardFix.jpg" title="XX"><img alt="" src="images/keyboardFix.jpg" title="XX" /></a></td>
+<td align="center">Keyboard Fix</td>
+</tr>
+</tbody>
+</table>
+<h1 id="toshiba-msx-hx-10">Toshiba MSX HX-10</h1>
+<h4 id="toshiba-msx-hx-10_1">Toshiba MSX HX-10</h4>
+<ul>
+<li><a href="https://www.msx.org/wiki/Toshiba_HX-10P">msx.org</a></li>
+<li><a href="http://www.computinghistory.org.uk/det/15464/Toshiba-MSX-HX-10/">computing history</a></li>
+<li><a href="http://www.nightfallcrew.com/07/11/2010/toshiba-msx-home-computer-hx-10/">night Fall Crew</a></li>
+</ul>
+<h3 id="other-links-used-in-the-making-of-this">Other Links used in the making of this</h3>
+<ul>
+<li>
+<p><a href="https://www.msx.org/forum/debates-en-espa-ol/hardware/ayuda-con-teclas-de-msxtoshiba-hx-10">Keyboard dissasembly pics</a></p>
+</li>
+<li>
+<p><a href="https://github.com/lmorchard/tmk_keyboard/tree/bdde5f9413ce5c3ea627f201b04f04fe371806ce/keyboard/modelm">ModelM TMK Keyboard</a></p>
+</li>
+<li>
+<p><a href="/ekmps/shops/ultracabs/images/standard-joystick-set-with-mixed-pushbuttons.-90-p.jpg">HID Listen for Debug</a></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="images/20171013_141401.jpg" title="XX"><img alt="" src="images/20171013_141401.jpg" title="XX" /></a></td>
+<td align="center"><a href="images/20171013_141442.jpg" title="XX"><img alt="" src="images/20171013_141442.jpg" title="XX" /></a></td>
+</tr>
+<tr>
+<td align="center"><a href="images/20171021_115901.jpg" title="XX"><img alt="" src="images/20171021_115901.jpg" title="XX" /></a></td>
+<td align="center"><a href="images/20180502_210624.jpg" title="XX"><img alt="" src="images/20180502_210624.jpg" title="XX" /></a></td>
+</tr>
+<tr>
+<td align="center"><a href="images/20180502_210705.jpg" title="XX"><img alt="" src="images/20180502_210705.jpg" title="XX" /></a></td>
+<td align="center"><a href="images/KeyBoardTrace.jpg" title="XX"><img alt="" src="images/KeyBoardTrace.jpg" title="XX" /></a></td>
+</tr>
+<tr>
+<td align="center"><a href="images/ProtoAdvantage.jpg" title="XX"><img alt="" src="images/ProtoAdvantage.jpg" title="XX" /></a></td>
+<td align="center"><a href="images/keyboardFix.jpg" title="XX"><img alt="" src="images/keyboardFix.jpg" title="XX" /></a></td>
+</tr>
+<tr>
+<td align="center"><a href="images/keyboardMatrix.jpg" title="XX"><img alt="" src="images/keyboardMatrix.jpg" title="XX" /></a></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
