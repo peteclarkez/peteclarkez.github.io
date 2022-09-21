@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>Daytona USB Hardare - Clarkez Wiki</title>
+        <title>Hardware <-> Computer Interface - Clarkez Wiki</title>
         <link href="../../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../../css/base.css" rel="stylesheet">
@@ -61,6 +61,32 @@
   </li>
                                     
   <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">VideoPokers</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../VideoPokers/0.Intro/" class="dropdown-item">Introduction</a>
+</li>
+            
+<li>
+    <a href="../../VideoPokers/1.FirstLook/" class="dropdown-item">First Look</a>
+</li>
+            
+<li>
+    <a href="../../VideoPokers/2.Monitors/" class="dropdown-item">First Look Monitors</a>
+</li>
+            
+<li>
+    <a href="../../VideoPokers/3.Vertical/" class="dropdown-item">Vertical Cabinet</a>
+</li>
+            
+<li>
+    <a href="../../VideoPokers/4.PandoraBox/" class="dropdown-item">Pandora Box Cabinets</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">Virtua Racing</a>
     <ul class="dropdown-menu">
             
@@ -77,15 +103,11 @@
 </li>
             
 <li>
-    <a href="./" class="dropdown-item active">Daytona USB Hardare</a>
+    <a href="./" class="dropdown-item active">Hardware <-> Computer Interface</a>
 </li>
             
 <li>
     <a href="../4.%20Setting%20up%20a%20PC/" class="dropdown-item">Driving Software</a>
-</li>
-            
-<li>
-    <a href="../5.%20virtuaracing/" class="dropdown-item">Hardware</a>
 </li>
             
 <li>
@@ -156,41 +178,21 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#daytona-usb-hardare" class="nav-link">Daytona USB Hardare</a>
+            <li class="nav-item" data-level="1"><a href="#hardware-computer-interface" class="nav-link">Hardware &lt;-&gt; Computer Interface</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#teensey2" class="nav-link">Teensey2++</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#building-the-bread-board" class="nav-link">Building the bread board</a>
+            <li class="nav-item" data-level="2"><a href="#research" class="nav-link">Research</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#buidling-the-protoboard" class="nav-link">Buidling the Protoboard</a>
+            <li class="nav-item" data-level="2"><a href="#daytona-usb-project" class="nav-link">Daytona USB Project</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#firmware" class="nav-link">Firmware</a>
+            <li class="nav-item" data-level="2"><a href="#connecting-the-board-to-the-controller" class="nav-link">Connecting the Board to the Controller</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#software" class="nav-link">Software</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#connecting-to-m2emulator" class="nav-link">Connecting to M2Emulator</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#connecting-to-mame" class="nav-link">Connecting to Mame</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            <li class="nav-item" data-level="2"><a href="#pc-setup" class="nav-link">PC Setup</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -201,7 +203,11 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="daytona-usb-hardare">Daytona USB Hardare</h1>
+<h1 id="hardware-computer-interface">Hardware &lt;-&gt; Computer Interface</h1>
+<h2 id="research">Research</h2>
+<p>When i looked into how to interface the hardware I off course came across all the efforts of SailorSat on the various forums and lots of information on how to connect and setup Daytona Hardware to a computer. Luckily a lot of this work is compatible with the Virtua Racing hardware as well so I've been able to piggy back from that.</p>
+<p>Firstly I spend time looking at the connections and connectors in the back of the control panel. I decided to work at this point rather than back to the filter board as seems to be the case for most updates.</p>
+<p>This was to remain non destructive &amp; also to allow me to work with just the control panel and not have to cart about the large metal cages (or remove the boards from them).</p>
 <table>
 <thead>
 <tr>
@@ -243,6 +249,34 @@
 </tr>
 </tbody>
 </table>
+<h2 id="daytona-usb-project">Daytona USB Project</h2>
+<p>I came across a couple of options for interfacing hardware. Some relied on cannabalising hardware but I found SailorSat's repos and Forum posts on how they were reading the data using Arduino &amp;  Teensey2 boards.</p>
+<ul>
+<li><a href="http://forum.arcadecontrols.com/index.php/topic,145000.0.html?PHPSESSID=p7c5gtsrpp06beuget5r34ebs3">Arcade Controls -  Daytona USA - Converting a Twin cabinet "correctly"</a></li>
+<li>https://github.com/SailorSat/daytona-utils</li>
+</ul>
+<p>This project is also the main reason I started to use DaytonaUSA as a test bed rather than Virtua Racing. It seemed easier to get the 2 players going together (Although there are also updates to virtua Racing on that side too) </p>
+<h3 id="teensey2">Teensey2++</h3>
+<p>I decided to go with Teensey option rather than Arduino Mega, as I already had one and it seemed a lot simpler.</p>
+<h3 id="building-the-bread-board-protoboard">Building the bread board  &amp; Protoboard</h3>
+<p>Using Schematics &amp; Photos on the Forum posts, I put together a simple prototypes initially. I setup LEDS, buttons and potentiaometers in place of the console to test initially.</p>
+<p><a href="../imagesTeensy/IMG_20200511_124009_Large.jpg" title="Breadboard"><img alt="" src="../imagesTeensy/IMG_20200511_124009_Small.jpg" title="Breadboard" /></a> </p>
+<p>Once I was happy that the firmware worked and I could do some basic controls, I moved the setup to a protoboard for something a little more permanent.</p>
+<p><a href="../imagesTeensy/IMG_20200512_180618_Large.jpg" title="Protoboard 3 Cables"><img alt="" src="../imagesTeensy/IMG_20200512_180618_Small.jpg" title="Protoboard 3 Cables" /></a></p>
+<h3 id="testing-daughter-boards">Testing Daughter boards</h3>
+<p>As part of this work, i also created 4 daughter boards to us in testing.
+- LED output
+- 4+ Controller Button
+- 3 Potentiometers (Steer, Accelerator+Brake)
+- Feedback Output Display</p>
+<p><a href="../imagesTeensy/IMG_20200521_104953_Large.jpg" title="Protoboard &amp; Daughter Boards2"><img alt="" src="../imagesTeensy/IMG_20200521_104953_Small.jpg" title="Protoboard &amp; Daughter Boards2" /></a> </p>
+<p><a href="../imagesTeensy/IMG_20200517_154850_Large.jpg" title="Protoboard Drive"><img alt="" src="../imagesTeensy/IMG_20200517_154850_Small.jpg" title="Protoboard Drive" /></a></p>
+<p>More Info TBD</p>
+<h3 id="firmware">Firmware</h3>
+<p>At this stage I'm still on a more or less stock firmware from SailorSat, but I do have to make some changes to better support the Virtua Racing Paddle shifting.</p>
+<h3 id="printed-boards">Printed Boards</h3>
+<p>To try and make things more stable i put some prprinted versions of the boards together. (TBD Still need to be tested)</p>
+<p><a href="../imagesTeensy/IMG_20210816_211927_Large.jpg" title="Printed Boards"><img alt="" src="../imagesTeensy/IMG_20210816_211927_Small.jpg" title="Printed Boards" /></a> </p>
 <table>
 <thead>
 <tr>
@@ -279,27 +313,170 @@
 </tr>
 </tbody>
 </table>
-<h2 id="teensey2">Teensey2++</h2>
-<h2 id="building-the-bread-board">Building the bread board</h2>
-<h2 id="buidling-the-protoboard">Buidling the Protoboard</h2>
-<h2 id="firmware">Firmware</h2>
-<h2 id="software">Software</h2>
-<h2 id="connecting-to-m2emulator">Connecting to M2Emulator</h2>
-<h2 id="connecting-to-mame">Connecting to Mame</h2>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h2 id="connecting-the-board-to-the-controller">Connecting the Board to the Controller</h2>
+<h3 id="amp-connections">AMP Connections</h3>
+<p>The connections used by the console are  TE Connectivity, AMP Universal Power Connector </p>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>https://akishop.jp/products/amp-connectors</li>
+<li>https://uk.rs-online.com/web/p/wire-housings-plugs/7194379</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<p>RS Components</p>
+<ul>
+<li>TE Connectivity AMP Universal Power Male Crimp Terminal Contact 22AWG 175149-1 (Stock no.:712-1993) Qty:100</li>
+<li>TE Connectivity AMP Universal Power Female Connector Housing, 3.96mm Pitch, 3 Way, 1 Row (Stock no.:712-2220) Qty:10</li>
+<li>TE Connectivity AMP Universal Power Female Connector Housing, 3.96mm Pitch, 4 Way, 2 Row (Stock no.:712-2223) Qty:10</li>
+<li>TE Connectivity AMP Universal Power Female Connector Housing, 3.96mm Pitch, 6 Way, 2 Row (Stock no.:719-4385) Qty:10</li>
+</ul>
+<p>Also ordered these, but I think that was wrong</p>
+<ul>
+<li>Oops - TE Connectivity AMP Universal Power Female Crimp Terminal Contact 22AWG 175151-1 (Stock no.:712-1996 ) Qty:100</li>
+<li>oops - TE Connectivity AMP Universal Power Female Crimp Terminal Contact 16AWG 175152-1 (Stock no.:683-1336) Qty:50</li>
+</ul>
+<p>I connected these cables to terminated connectors to plug into the headers directly on the prototype boards.</p>
+<h3 id="cable-set">Cable Set</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Wiring</th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Pedals</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Red</td>
+<td align="center">White</td>
+<td align="center">Black</td>
+</tr>
+<tr>
+<td align="center">Red</td>
+<td align="center">Green</td>
+<td align="center">Black</td>
+</tr>
+<tr>
+<td align="center"><strong>Gear Shift</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Blue</td>
+<td align="center">Black</td>
+<td align="center">Red</td>
+</tr>
+<tr>
+<td align="center"><strong>Buttons</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Red</td>
+<td align="center">Blue</td>
+<td align="center">Yellow</td>
+</tr>
+<tr>
+<td align="center">Green</td>
+<td align="center">Black</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><strong>Start Button Lamp</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Yellow</td>
+<td align="center">White</td>
+<td align="center">Red</td>
+</tr>
+<tr>
+<td align="center"><strong>LeaderLamp</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Green</td>
+<td align="center">White</td>
+<td align="center">Black</td>
+</tr>
+<tr>
+<td align="center"><strong>VR Lamp</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Red</td>
+<td align="center">Blue</td>
+<td align="center">Yellow</td>
+</tr>
+<tr>
+<td align="center">Green</td>
+<td align="center">Black</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><strong>Steering</strong></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Black</td>
+<td align="center">Blue</td>
+<td align="center">Yellow</td>
+</tr>
+</tbody>
+</table>
+<p>Bill of Materials for Cables 
+- 25cm cables
+- Red x6
+- Black x7
+- White x3
+- Blue x4
+- Green x4
+- Yellow x4
+- Female Jumper/dupont &amp; Male Molex </p>
+<p>I had a short cable built for the pedals, but then I used a 6 core Alarm/phone cable and  added male/female dupont cables on each end to create and extension cable..</p>
+<h3 id="connected-setup">Connected Setup</h3>
+<p>Once the cables were built together they were placed into the upright consoles and on the shelf behind the console.
+This then feeds out a USB cable to run into the PC for the Software.</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="../imagesTeensy/IMG_20210606_154117_Large.jpg" title="Amp Cables"><img alt="" src="../imagesTeensy/IMG_20210606_154117_Small.jpg" title="Amp Cables" /></a></td>
+<td align="center"><a href="../imagesTeensy/IMG_20210531_193243_Large.jpg" title="Cables Crimper"><img alt="" src="../imagesTeensy/IMG_20210531_193243_Small.jpg" title="Cables Crimper" /></a></td>
+<td align="center"><a href="../imagesTeensy/IMG_20210606_154258_Large.jpg" title="Throttle Cables"><img alt="" src="../imagesTeensy/IMG_20210606_154258_Small.jpg" title="Throttle Cables" /></a></td>
+</tr>
+<tr>
+<td align="center"><a href="../imagesTeensy/IMG_20210606_162312_Large.jpg" title="Two Build Boards"><img alt="" src="../imagesTeensy/IMG_20210606_162312_Small.jpg" title="Two Build Boards" /></a></td>
+<td align="center"><a href="../imagesTeensy/IMG_20210606_211402_Large.jpg" title="Boards in Cab"><img alt="" src="../imagesTeensy/IMG_20210606_211402_Small.jpg" title="Boards in Cab" /></a></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center"><a href="../imagesTeensy/IMG_20210523_211824_Large.jpg" title="Board Image"><img alt="" src="../imagesTeensy/IMG_20210523_211824_Small.jpg" title="Board Image" /></a></td>
+<td align="center"><a href="../imagesTeensy/IMG_20210816_211927_Large.jpg" title="Printed Boards"><img alt="" src="../imagesTeensy/IMG_20210816_211927_Small.jpg" title="Printed Boards" /></a></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="pc-setup">PC Setup</h2>
+<h3 id="software">Software</h3>
+<p>As a base software it was setup with M2Emulator to run Daytona USA.</p>
+<h3 id="connecting-to-m2emulator">Connecting to M2Emulator</h3>
+<ul>
+<li>https://emulation.gametechwiki.com/index.php/Model_2_Emulator</li>
+</ul>
+<h3 id="connecting-to-mame">Connecting to Mame</h3></div>
             </div>
         </div>
 
